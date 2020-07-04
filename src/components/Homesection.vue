@@ -36,7 +36,7 @@ export default {
   padding-left: 20px;
   font-family: 'Rubik-Regular';
   line-height: 1.3;
-  margin-top: 120px;
+  margin-top: 145px;
   font-weight: normal;
 }
 

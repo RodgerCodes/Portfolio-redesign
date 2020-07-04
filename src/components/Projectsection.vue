@@ -61,6 +61,9 @@ export default {
 </script>
 
 <style>
+.project{
+  margin-top: 40px;
+}
  .project h1 {
    font-size: 1.8em;
    text-align: center;

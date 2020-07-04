@@ -68,6 +68,10 @@ export default {
 </script>
 
 <style>
+
+.uses{
+    margin-top: 40px;
+}
 .uses p {
     padding: 15px 8px;
 }

@@ -31,6 +31,9 @@ export default {
 </script>
 
 <style>
+.contact-info{
+  margin-top: 50px;
+}
 .contact-info .classic{
   text-align: center;
 }

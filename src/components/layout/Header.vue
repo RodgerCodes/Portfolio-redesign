@@ -31,13 +31,18 @@ export default {
 
 <style scoped>
 .header img{
-    width:160px;
+    width:100px;
 }
 
 nav{
     height: 40px;
     display: grid;
     grid-column: 1/8;
+}
+
+nav a {
+    font-weight: 500;
+    font-size: 1.1em;
 }
 
 nav .links{

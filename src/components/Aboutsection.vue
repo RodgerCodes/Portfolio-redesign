@@ -27,6 +27,9 @@ export default {
 </script>
 
 <style>
+.about{
+    margin-top: 40px;
+}
 .about h1 {
     text-align: center;
     font-size: 1.3em;
