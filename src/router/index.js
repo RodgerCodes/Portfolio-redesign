@@ -4,6 +4,7 @@ import Home from '../Views/Home.vue'
 import About from '../Views/About.vue'
 import Projects from '../Views/Projects.vue'
 import Uses from '../Views/Uses.vue'
+import Contact from '../Views/Contact.vue'
 
 Vue.use(Vuerouter);
 
@@ -27,6 +28,11 @@ const routes = [
         path:'/uses',
         name:'Uses',
         component:Uses
+    },
+    {
+        path:'/contact',
+        name:'Contact',
+        component:Contact
     }
 ]
 

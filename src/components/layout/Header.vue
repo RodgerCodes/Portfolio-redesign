@@ -3,14 +3,16 @@
     <div class="header">
         <img :src="logo" alt="Logo">
         <nav>
-         <ul>
-            <li><router-link to="/">Home</router-link></li>
-            <li><router-link to="/blog">Blog</router-link></li>
-            <li><router-link to="/uses">Uses</router-link></li>
-            <li><router-link to="/about">About</router-link></li>
-            <li><router-link to="/projects">Projects</router-link></li>
-            <li><router-link to="/contact">Contact</router-link></li>
-        </ul>
+            <div class="links">
+               <router-link to="/">Home</router-link>
+             <router-link to="/blog">Blog</router-link>
+             <router-link to="/uses">Uses</router-link>
+             <router-link to="/about">About</router-link>
+            </div>
+            <div class="links1">
+                  <router-link to="/projects">Projects</router-link>
+            <router-link to="/contact">Contact</router-link>
+            </div>
         </nav>
     </div>
   </div>
@@ -34,14 +36,28 @@ export default {
 
 nav{
     height: 40px;
+    display: grid;
+    grid-column: 1/8;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-bottom: 10px;
-    transition: all 0.5s ease;
+nav .links{
+    grid-column: 1;
+    margin-bottom: 15px;
+}
+
+nav .links a {
+    margin: 0 20px;
+}
+
+nav .links1 {
+    grid-row: 2;
+   grid-column: 1;
+   padding-left:60px;
+}
+
+nav .links1 a{
+    margin: 0 20px;
+
 }
 
 a{
