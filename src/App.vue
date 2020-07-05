@@ -34,7 +34,7 @@ export default {
 body{
   background-color:var(--bg-color) ;
   color: var(--text-color);
-  font-family: 'Rubik-Regular';
+  font-family: 'Rubik-Regular', sans-serif;
   overflow-x: hidden;
 }
 
