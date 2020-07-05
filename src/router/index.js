@@ -5,6 +5,7 @@ import About from '../Views/About.vue'
 import Projects from '../Views/Projects.vue'
 import Uses from '../Views/Uses.vue'
 import Contact from '../Views/Contact.vue'
+import Blog from '../Views/Blog.vue'
 
 Vue.use(Vuerouter);
 
@@ -33,6 +34,11 @@ const routes = [
         path:'/contact',
         name:'Contact',
         component:Contact
+    },
+    {
+        path:'/blog',
+        name:'Blog',
+        component:Blog
     }
 ]
 

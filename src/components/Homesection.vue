@@ -14,6 +14,7 @@
 </template>
 
 <script>
+// import Footer from './layout/Footer'
 export default {
   name: 'Homesection',
   data() {
@@ -21,13 +22,16 @@ export default {
       dev:require('../assets/dev.png')
     }
   },
+  components:{
+    
+  }
 }
 </script>
 
 <style>
 .home img{
-  width: 100%;
   display: none;
+  max-width: 700px;
 }
 
 
@@ -38,6 +42,7 @@ export default {
   line-height: 1.3;
   margin-top: 145px;
   font-weight: normal;
+  grid-row: 1;
 }
 
 .home .intro h3{
@@ -59,7 +64,111 @@ export default {
 }
 
 .home .btn:hover{
-  transform: scale(1.01);
+  transform: scale(1.1);
 }
 
+@media screen and (min-width:500px){
+  body{
+    font-size: 18px;
+  }
+
+  .home .intro{
+    margin-top: 160px;
+    grid-column: 1/10;
+  }
+
+  .home .btn{
+    top: 61%;
+    left: 3%;
+  }
+
+  .home img{
+    display: block;
+    grid-row:1;
+    grid-column: 11/12;
+    margin-top: 45px;
+    width: 400%;
+  }
+}
+
+
+@media screen and (min-width:590px){
+  .home img{
+    grid-column: 13;
+    padding: 0 10px;
+    width: 300%;
+  }
+}
+
+@media screen and (min-width:620px){
+   .home img{
+     grid-column: 13/15;
+   }
+}
+
+@media screen and (min-width:710px){
+  body{
+    font-size: 20px;
+  }
+   .home .intro{
+     grid-column: 4/11;
+     margin-top: 170px;
+     margin-left: 20px;
+   }
+
+   .home img{
+     width: 180%;
+     grid-column: 12;
+     margin-left: 100px;
+     margin-top: 70px;
+   }
+
+   .home .btn{
+     left: 5%;
+   }
+}
+
+@media screen and (min-width:760px){
+    .home .btn{
+       top: 58%;
+    }
+}
+
+@media screen and (min-width:1130px){
+  .home .intro{
+    grid-column: 7/8;
+    margin-left: 110px;
+  }
+
+  .home .btn{
+    left: 12%;
+  }
+
+  .home img{
+     grid-column: 12/13;
+  }
+}
+
+@media screen and (min-width:1200px){
+    body{
+      font-size: 22px;
+    }
+
+    .home .intro{
+      margin-top: 200px;
+      margin-left:6px;
+    }
+
+    .home .btn{
+      top: 65%;
+      left:7%;
+      font-size: 1.2rem;
+    }
+
+    .home img{
+      margin-top:80px;
+      margin-left:100px;
+      width: 100%;
+    }
+}
 </style>

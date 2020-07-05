@@ -43,11 +43,14 @@
            </div>
         </div>
         </div>
-        
-    </div>
+         <div class="bt">
+            <Footer/>
+         </div>  
+        </div>
 </template>
 
 <script>
+import Footer from './layout/Footer'
 export default {
     name:"Projectsection",
     data(){
@@ -56,6 +59,9 @@ export default {
         Thoughts:require('../assets/thoughts.jpg'),
         todo:require('../assets/todoist.jpg')
       }
+    },
+    components:{
+      Footer
     }
 }
 </script>
@@ -108,13 +114,12 @@ export default {
 
  .project-1 h2,  .project-2 h2,.project-3 h2, .project-4 h2 {
      text-align: center;
-     margin: 10px 0;
+     margin: 5px 0;
      font-size: 1.5em;
  }
 
  .project-2 .project-info a , .project-3 .project-info a, .project-4 .project-info a{
-   margin:10px 10px;
-   /* font-size: 0.9em; */
+   margin:5px 10px;
  }
 
 
@@ -144,7 +149,15 @@ export default {
 
  @media Screen and (min-width:500px){
    .project-2, .project-3, .project-4{
-      grid-column: 6;
+      grid-column: 2/3;
+   }
+
+   .project-2 h2, .project-3 h2, .project-4 h2{
+    margin:0px 0 ;
+   }
+
+   .project p{
+     text-align: center;
    }
 
  }
@@ -156,18 +169,33 @@ export default {
 
    .project-3{
      grid-row: 1;
-     grid-column: 7/9;
+     grid-column: 6/9;
+
    }
 
    .project-4{
       grid-row: 3;
-      grid-column: 4/7;
+      grid-column: 2/7;
    }
 
 
    .project-2, .project-3, .project-4{
      width: 280px;
-     height: 270px;
+     height: 280px;
+   }
+ }
+
+ @media screen and (min-width:710px){
+   .project-2{
+     grid-column: 2/4;
+   }
+
+   .project-3 h2{
+      margin:0;
+   }
+
+   .project-4{
+     grid-column:3/7 ;
    }
  }
 
@@ -177,7 +205,7 @@ export default {
     }
 
     .project-4{
-      grid-column: 2/7;
+      grid-column: 3/7;
     }
  }
 
@@ -200,9 +228,27 @@ export default {
    }   
  }
 
+ @media screen and (min-width:1130px){
+   .project-2{
+     grid-column:4/6 ;
+   }
+
+   .project-4{
+     grid-column:6/8 ;
+   }
+ }
+
  @media Screen and (min-width:1200px){
    .project-4{
       grid-row: 1;
+   }
+
+   .bt{
+     margin-top: 36px;
+   }
+
+   .project-3 p{
+     margin:0;
    }
 
    .project-2{

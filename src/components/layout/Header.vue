@@ -46,6 +46,7 @@ nav a {
 }
 
 nav .links{
+    grid-row: 1;
     grid-column: 1;
     margin-bottom: 15px;
 }
@@ -72,6 +73,62 @@ a{
 
 .router-link-exact-active{
   color: red;
+}
+
+
+@media Screen and (min-width:500px){
+    nav .links{
+        grid-column: 1/6;
+    }
+
+    nav{
+     padding: 0 10px;
+    }
+
+    nav .links1{
+        grid-row: 1;
+        grid-column:5/8 ;
+    }
+
+    nav .links1 a{
+        margin: 0 9px;
+    }
+
+    nav .links a{
+        margin: 0 10px;
+    }
+}
+
+@media screen and (min-width:590px){
+    nav .links{
+        grid-column: 3/6;
+    }
+}
+
+@media screen and (min-width:620px){
+    
+}
+
+@media screen and (min-width:710px){
+    nav{
+        position: absolute;
+        top: 2.5%;
+        right: 5%;
+    }
+
+    nav .links1{
+        margin-left:30px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    nav .links1{
+        margin-left:40px;
+    }
+
+    .header img{
+        margin-left: 40px;
+    }
 }
 
 

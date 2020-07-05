@@ -76,4 +76,21 @@ export default {
     font-size: 0.9em;
     text-align: start;
 }
+
+@media screen and (min-width:500px) {
+      .tech .stack {
+          grid-template-columns: repeat(3,1fr);
+          margin-left: 70px;
+      }
+
+      .tech .stack > div img{
+          width: 60%;
+      }
+}
+
+@media screen and (min-width:710px){
+    .tech .stack{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
 </style>

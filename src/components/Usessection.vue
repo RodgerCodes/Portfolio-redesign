@@ -1,69 +1,76 @@
 <template>
     <div class="uses">
-        <p>This Page is inspired by <a href="" target="_blank">Wes Bos's Uses page</a></p>
+        <p>This Page is inspired by <a href="https://wesbos.com/uses" rel="noreferrer noopener" target="_blank">Wes Bos's Uses page</a></p>
         <div class="Editor">
           <h1>Editor + Terminal</h1>
           <div>
               <h3>Code Editor</h3>
-                 
-              <a href="">Hello</a>
+                <p>i mainly use <a href="https://code.visualstudio.com/download"  rel="noreferrer noopener" target="_blank">Vscode</a></p>
           </div>
           <hr>
           <div>
               <h3>Code Editor Theme</h3>
-              <a href="">Hello</a>
+              <p><a href="https://vscodethemes.com/e/morgan-codes.morgan-codes-vscode-theme"  rel="noreferrer noopener" target="_blank">Morgan.codes</a> by Morgan RichardSon</p>
           </div>
           <hr>
           <div>
               <h3>Code Editor Font</h3>
-              <a href="">Hello</a>
+              <p>Consolas</p>
           </div>
           <hr>
           <div>
               <h3>Console App</h3>
-              <a href=""></a>
+              <p>Vscode intergrated terminal with <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10"  rel="noreferrer noopener" target="_blank">WSl</a></p>
           </div>
         </div>
         <div class="Desktop">
             <h1>Desktop Apps</h1>
             <div>
                 <h3>Browser</h3>
-                <a href=""></a>
+                <a href="https://www.google.com/chrome/?brand=CHBD&gclid=Cj0KCQjw9IX4BRCcARIsAOD2OB2hGRHj0-AEDLHFkjGYdVNGwsbqq-8g1tTvuGEpTRDnFO7hHMdmNAwaAgpwEALw_wcB&gclsrc=aw.ds"  rel="noreferrer noopener" target="_blank">Google Chrome</a>
             </div>
             <hr>
             <div>
                 <h3>Todo App</h3>
-                <a href=""></a>
+                <a href="https://todo.microsoft.com/tasks/"  rel="noreferrer noopener" target="_blank">Microsoft Todo App</a>
             </div>
             <hr>
             <div>
                 <h3>Video Editing</h3>
-                <a href=""></a>
+                <a href="https://www.adobe.com/africa/products/premiere.html"  rel="noreferrer noopener" target="_blank">Adobe premiere Pro</a>
             </div>
         </div>
         <div class="hosting">
           <h1>Hosting & Co.</h1>
           <div>
               <h3>Hosting Frontend sites</h3>
-              <a href=""></a>
+              <a href="https://www.netlify.com/"  rel="noreferrer noopener" target="_blank">Netlify</a>
           </div>
           <hr>
           <div>
               <h3>Hosting backend</h3>
-              <a href=""></a>
+              <a href="https://www.heroku.com"  rel="noreferrer noopener" target="_blank">Heroku</a>
           </div>
           <hr>
           <div>
               <h3>Other cloud needs</h3>
-              <a href=""></a>
+              <a href="https://www.digitalocean.com/"  rel="noreferrer noopener" target="_blank">Digital Ocean</a>
           </div>
         </div>
+        <div>
+           <Footer/>
+        </div>
     </div>
+    
 </template>
 
 <script>
+import Footer from './layout/Footer'
 export default {
-    name:'Usessection'
+    name:'Usessection',
+    components:{
+        Footer
+    }
 }
 </script>
 
@@ -89,7 +96,7 @@ export default {
 }
 
 .uses a {
-    color: rgb(65, 134, 225);
+    color: rgb(65, 144, 247);
 }
 
 .uses .Editor h1, .uses .Desktop h1, .uses .hosting h1{
@@ -102,7 +109,7 @@ export default {
     padding-left:5x;
 }
 
-.Editor >div {
+.Editor > div, .Desktop > div, .hosting > div {
    display: flex;
    justify-content: space-between;
 }
@@ -113,5 +120,21 @@ export default {
 hr{
     margin: 10px 0;
     padding: 0 10px;
+}
+
+@media screen and (min-width:500px) {
+    .uses p{
+        text-align: center;
+    }
+
+    .uses .Editor, .uses .Desktop, .uses .hosting{
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width:1130px){
+    .uses .Editor, .uses .Desktop, .uses .hosting{
+        padding: 0 100px;
+    }
 }
 </style>

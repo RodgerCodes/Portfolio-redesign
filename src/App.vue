@@ -2,16 +2,18 @@
   <div>
     <Header/>
     <router-view/>
+    <!-- <Footer/> -->
   </div>
 </template>
 
 <script>
 import Header from './components/layout/Header'
-
+// import Footer from './components/layout/Footer'
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    // Footer
   }
 }
 </script>
@@ -47,6 +49,7 @@ li{
 .grid{
   display: grid;
   grid-column: 1/12;
+  /* grid-gap: 20px; */
 }
 
 

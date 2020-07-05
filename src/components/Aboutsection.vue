@@ -8,11 +8,15 @@
         </div>
        </div>
        <Techstack/>
+       <div>
+          <Footer/>
+       </div>
     </div>
 </template>
 
 <script>
 import Techstack from './extracomp/Techstack';
+import Footer from './layout/Footer'
 export default {
     name:'Aboutsection',
     data() {
@@ -21,7 +25,8 @@ export default {
         }
     },
     components:{
-        Techstack
+        Techstack,
+        Footer
     }
 }
 </script>
@@ -40,6 +45,7 @@ export default {
     max-width: 300px;
     padding: 10px 30px;
     grid-column: 6/7;
+    grid-row: 1;
 
 }
 
@@ -52,5 +58,22 @@ export default {
    font-weight: 400;
    font-size: 1em;
    padding: 10px 8px;
+}
+
+@media screen and (min-width:500px){
+    
+}
+
+@media screen and (min-width:710px){
+    .about-info .extra-info{
+        grid-row: 1;
+        grid-column: 3/13;
+        padding: 10px 0;
+    }
+    
+    .about-info img{
+        grid-column: 1/3;
+    }
+
 }
 </style>
