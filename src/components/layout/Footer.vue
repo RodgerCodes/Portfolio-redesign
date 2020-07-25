@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-         <p>Built with <i class="fas fa-heart" style="color:red"></i> by Rodger Kumwanje with <i class="fab fa-vuejs" style="color:green"></i></p>
+         <p>Built with <i class="fas fa-heart" style="color:red"></i> by Rodger  with <i class="fab fa-vuejs" style="color:green"></i></p>
          <p>v0.5.0</p>
     </div>
 </template>

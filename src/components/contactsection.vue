@@ -12,7 +12,7 @@
          </div>
        </div>
        <div class="extra">
-         <p>Other ways i prefer for communication are <a href="mailto:rkumwanje@gmail.com">Email</a> and <a href="">LinkedIn</a></p>
+         <p>Other ways i prefer for communication are <a href="mailto:rkumwanje@gmail.com">Email</a> and <a href="https://www.linkedin.com/in/rodger-kumwanje-2a708a18b/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
        </div>
        <div class="social">
           <a href="https://twitter.com/rodger_codes" target="_blank" rel="noreferrer noopener"><i class="fab fa-twitter fa-lg" style="color:#34ADE3"></i></a>

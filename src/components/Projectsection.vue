@@ -5,7 +5,7 @@
         <div class=" projects grid"> 
         <div class="project-2">
           <h2>FjMedia</h2>
-           <img :src="facebook" alt="Project image">
+           <img :src="facebook" alt="Project image" loading="lazy">
            <div class="project-info">
              <p>A Photography Website</p>
              <div>
@@ -18,7 +18,7 @@
         </div>
         <div class="project-3 card">
           <h2>Todo-ist</h2>
-           <img :src="todo" alt="Project image">
+           <img :src="todo" alt="Project image" loading="lazy">
            <div class="project-info">
              <p>A todoList app built with node and mongoDb</p>
              <div>
@@ -31,7 +31,7 @@
         </div>
            <div class="project-4 card">
           <h2>Thoughts 101</h2>
-           <img :src="Thoughts" alt="Project image">
+           <img :src="Thoughts" alt="Project image" loading="lazy">
            <div class="project-info">
              <p>A Fullstack web app built with node, Vue and MongoDB</p>
              <div>
@@ -104,7 +104,7 @@ export default {
      border-bottom: 2px solid #fff;
      margin: 15px 0;
      transition: all 0.5s ease;
-     grid-column: 2/3;
+     grid-column: 4;
  }
 
 .project-1:hover, .project-2:hover, .project-3:hover, .project-4:hover {

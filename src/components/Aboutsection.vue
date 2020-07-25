@@ -4,7 +4,7 @@
        <div class="about-info grid">
         <img :src="myimage" alt="Rodger Photo">
         <div class="extra-info">
-            <h2>My Name is Rodger Kumwanje and i am a 19 year old Full stack developer with 1 year experience building web apps with Technologies like Nodejs, Vuejs ,Html5, CSS3, Vanilla JavaScript, MongoDB, MySQL and Postgres. With the techstack you can only guess it, my favourite Programming language is JavaScript.I am also a Student at the Malawi University of Science and Technology <a target="_blank" rel="noreferrer" href="https://www.must.ac.mw/">Must</a> Pursuing a degree in Meteorology and Climate Science</h2>
+            <h2>My Name is Rodger Kumwanje and i am a Full stack Web developer with 1 year experience building web apps with Technologies like Nodejs, Vuejs ,Html5, CSS3, Vanilla JavaScript, MongoDB, MySQL and Postgres. With the techstack you can only guess it, my favourite Programming language is JavaScript.I am also a Student at the Malawi University of Science and Technology <a target="_blank" rel="noreferrer" href="https://www.must.ac.mw/">Must</a> Pursuing a degree in Meteorology and Climate Science</h2>
         </div>
        </div>
        <Techstack/>
@@ -75,5 +75,11 @@ export default {
         grid-column: 1/3;
     }
 
+}
+
+@media screen and (min-width:1200px){
+    .about-info .extra-info{
+        padding-top: 40px;
+    }
 }
 </style>
