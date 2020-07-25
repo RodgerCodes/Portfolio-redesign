@@ -4,7 +4,6 @@ import Home from '../Views/Home.vue'
 import About from '../Views/About.vue'
 import Projects from '../Views/Projects.vue'
 import Uses from '../Views/Uses.vue'
-import Post from '../components/extracomp/Post.vue'
 import Contact from '../Views/Contact.vue'
 import Blog from '../Views/Blog.vue'
 
@@ -40,11 +39,6 @@ const routes = [
         path:'/blog',
         name:'Blog',
         component:Blog
-    },
-    {
-        path:'/posts',
-        name:'Post',
-        component:Post
     }
 ]
 

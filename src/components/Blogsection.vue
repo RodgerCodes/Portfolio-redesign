@@ -10,8 +10,7 @@
           class="card">
              <h1>{{post.title}}</h1>
              <p>{{post.body | truncate(150, '...') |stripTags }}</p>
-             <button v-on:click="viewPost(post._id)"
-              class="btn">Read More</button>
+              <a href="https://desolate-river-28338.herokuapp.com/{{post._id}}" class="btn" target="_blank">Read More</a>
           </div>
     </div>      
     </div>
@@ -19,7 +18,6 @@
 
 <script>
 import DataService from '../apidata';
-import {EventBus} from '../event-bus';
 export default {
     name:"Blogsection",
     data(){
@@ -43,18 +41,6 @@ export default {
         stripTags:function(input){
         return input.replace(/<(?:.|\n)*?>/gm, '')
     }
-  },
-  methods:{
-      async viewPost(id){
-          try {
-             const post = await DataService.getSingle(id);
-             const item = post.data.title;
-             EventBus.$emit('data', item);
-             this.$router.push('/posts')
-          } catch (err) {
-              this.err = err;
-          }
-      }
   }
 }
 </script>
