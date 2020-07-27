@@ -56,7 +56,7 @@ export default {
   left: 5%;
   margin-top: 10px;
   color: #fff;
-  background-image: linear-gradient(#34ADE3,#1A5772);
+  background: #1A5772;
   padding: 8px 10px;
   border-radius: 20px;
   font-size: 1.2em;

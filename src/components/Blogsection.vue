@@ -10,7 +10,7 @@
           class="card">
              <h1>{{post.title}}</h1>
              <p>{{post.body | truncate(150, '...') |stripTags }}</p>
-              <a href="https://desolate-river-28338.herokuapp.com/{{post._id}}" class="btn" target="_blank">Read More</a>
+              <a href="https://rodgercodes2.herokuapp.com" class="btn" target="_blank">Read More</a>
           </div>
     </div>      
     </div>

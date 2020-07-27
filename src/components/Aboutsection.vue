@@ -60,6 +60,10 @@ export default {
    padding: 10px 8px;
 }
 
+.about-info .extra-info a{
+    color: rgb(24, 125, 219);
+}
+
 @media screen and (min-width:500px){
     
 }
