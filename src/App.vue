@@ -34,7 +34,7 @@ export default {
 body{
   background-color:var(--bg-color) ;
   color: var(--text-color);
-  font-family: 'Rubik-Regular', sans-serif;
+  font-family: 'Rubik', sans-serif;
   overflow-x: hidden;
 }
 
@@ -50,13 +50,5 @@ li{
   display: grid;
   grid-column: 1/12;
   /* grid-gap: 20px; */
-}
-
-
-
-
-@font-face {
-  font-family: 'Rubik-Regular';
-  src: url('./assets/fonts/Rubik-Regular.ttf');
 }
 </style>

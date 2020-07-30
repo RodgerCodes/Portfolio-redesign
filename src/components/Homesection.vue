@@ -38,7 +38,7 @@ export default {
 .home .intro{
   font-size: 1.2em;
   padding-left: 20px;
-  font-family: 'Rubik-Regular';
+  font-family: 'Rubik';
   line-height: 1.3;
   margin-top: 145px;
   font-weight: normal;
