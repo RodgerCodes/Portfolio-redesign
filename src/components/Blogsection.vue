@@ -9,7 +9,7 @@
            v-bind:item="post"
           class="card">
              <h1>{{post.title}}</h1>
-             <p>{{post.body | truncate(150, '...') |stripTags }}</p>
+             <p>{{post.body | truncate(150, '...') |stripTags}}</p>
               <a href="https://rodgercodes2.herokuapp.com" class="btn" target="_blank">Read More</a>
           </div>
     </div>      
@@ -65,6 +65,12 @@ export default {
     width: 300px;
     height: 300px;
     box-shadow: 0px 0px 10px #10171d, 0px 0px 10px #10171d;
+}
+
+
+.article .card .btn{
+    margin-top: 30px;
+    color:#1889be;
 }
 
 .article .card h1{

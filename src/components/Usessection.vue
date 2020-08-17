@@ -5,7 +5,7 @@
           <h1>Editor + Terminal</h1>
           <div>
               <h3>Code Editor</h3>
-                <p>i mainly use <a href="https://code.visualstudio.com/download"  rel="noreferrer noopener" target="_blank">Vscode</a></p>
+                <p>I mainly use <a href="https://code.visualstudio.com/download"  rel="noreferrer noopener" target="_blank">Vscode</a></p>
           </div>
           <hr>
           <div>
@@ -54,7 +54,7 @@
           <hr>
           <div>
               <h3>Other cloud needs</h3>
-              <a href="https://www.digitalocean.com/"  rel="noreferrer noopener" target="_blank">Digital Ocean</a>
+              <a href="https://www.digitalocean.com/" rel="noreferrer noopener" target="_blank">Digital Ocean</a>
           </div>
         </div>
         <div>

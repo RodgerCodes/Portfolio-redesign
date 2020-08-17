@@ -1,8 +1,8 @@
 <template>
   <div class="home grid">
     <div class="intro">
-        <h1>Hello there,</h1>
-     <h2>I'm Rodger.</h2>
+        <h1>Hello there ,</h1>
+     <h2>I'm Rodger Kumwanje</h2>
      <h3>A FullStack Web Developer</h3>
     </div>
     
@@ -10,6 +10,7 @@
     <div>
       <router-link to="/about" class="btn">About</router-link>
     </div>
+
     </div>
 </template>
 
@@ -55,17 +56,19 @@ export default {
   top: 65%;
   left: 5%;
   margin-top: 10px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.918);
   background: #1A5772;
-  padding: 8px 10px;
+  padding: 8px 17px;
   border-radius: 20px;
   font-size: 1.2em;
   transition: all 0.5s ease;
 }
 
+
 .home .btn:hover{
   transform: scale(1.1);
 }
+
 
 @media screen and (min-width:500px){
   body{
@@ -157,11 +160,16 @@ export default {
     .home .intro{
       margin-top: 200px;
       margin-left:6px;
+      grid-column: 11;
     }
+     
+     .home .intro h2{
+       font-size: 1.8em;
+     }
 
     .home .btn{
-      top: 65%;
-      left:7%;
+      top: 67%;
+      left:4%;
       font-size: 1.2rem;
     }
 

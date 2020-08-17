@@ -1,7 +1,6 @@
 <template>
     <div class="footer">
          <p>Built with <i class="fas fa-heart" style="color:red"></i> by Rodger  with <i class="fab fa-vuejs" style="color:green"></i></p>
-         <p>v0.5.0</p>
     </div>
 </template>
 
@@ -22,7 +21,6 @@ export default {
 
 .footer p{
     text-align: center;
-    font-size: 0.8rem;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 </style>

@@ -4,13 +4,13 @@
         <p>Here is a list of some of my Personal Projects</p>
         <div class=" projects grid"> 
         <div class="project-2">
-          <h2>FjMedia</h2>
+          <h2>WritersHub</h2>
            <img :src="facebook" alt="Project image" loading="lazy">
            <div class="project-info">
-             <p>A Photography Website</p>
+             <p>Site for Writers</p>
              <div>
                  <i class="fab fa-chrome" color="#000"></i>
-               <a target="_blank"  rel="noreferrer" href="https://fjmedia.netlify.com">Visit</a>
+               <a target="_blank"  rel="noreferrer" href="https://writershub1.herokuapp.com">Visit</a>
                <i class="fab fa-github" color="#000"></i>
                 <a  rel="noreferrer" href="https://github.com/RodgerCodes/Facebookclone" target="_blank">Code</a>
              </div>
@@ -55,7 +55,7 @@ export default {
     name:"Projectsection",
     data(){
       return{
-        facebook:require('../assets/Screenshot (7).jpg'),
+        facebook:require('../assets/project.jpg'),
         Thoughts:require('../assets/thoughts.jpg'),
         todo:require('../assets/todoist.jpg')
       }

@@ -49,6 +49,6 @@ li{
 .grid{
   display: grid;
   grid-column: 1/12;
-  /* grid-gap: 20px; */
+
 }
 </style>

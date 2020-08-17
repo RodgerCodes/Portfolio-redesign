@@ -1,5 +1,6 @@
 import axios from 'axios';
-const api = 'https://rodgercodes2.herokuapp.com/api/backend/';
+// const api = 'https://rodgercodes2.herokuapp.com/api/backend/';
+const api = 'http://localhost:5000/api/backend'
 
 class DataService {
     
