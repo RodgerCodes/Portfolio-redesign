@@ -1,6 +1,8 @@
 <template>
-    <div class="contact-info">
+    <div class="contact-info" id="contact">
+      <h1>Contact Info</h1>
        <div class="classic">
+         
          <div class="number"> 
            <h1>Phone Numbers</h1>
           <p>+265 880 122 611</p>
@@ -22,18 +24,18 @@
           <a href="https://www.linkedin.com/in/rodger-kumwanje-2a708a18b/" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin-in fa-lg" style="color:#1A5772"></i></a>
        </div>
        <div class="hellofo">
-        <Footer/>
+        <!-- <Footer/> -->
        </div>
        
     </div>
 </template>
 
 <script>
-import Footer from './layout/Footer'
+// import Footer from './layout/Footer'
 export default {
     name:'contactsection',
     components:{
-      Footer
+      // Footer
     }
 }
 </script>
@@ -42,7 +44,8 @@ export default {
 .contact-info{
   margin-top: 100px;
 }
-.contact-info .classic{
+
+.contact-info .classic, .contact-info h1{
   text-align: center;
 }
 

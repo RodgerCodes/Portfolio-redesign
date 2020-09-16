@@ -5,13 +5,14 @@
         <nav>
             <div class="links">
                <router-link to="/">Home</router-link>
-             <router-link to="/blog">Blog</router-link>
-             <router-link to="/uses">Uses</router-link>
-             <router-link to="/about">About</router-link>
+               <router-link to="/#about">About</router-link>
+             
+             <router-link to="/#projects">Projects</router-link>
+             
             </div>
             <div class="links1">
-                  <router-link to="/projects">Projects</router-link>
-            <router-link to="/contact">Contact</router-link>
+                  <router-link to="/#uses">Uses</router-link>
+            <router-link to="/#contact">Contact</router-link>
             </div>
         </nav>
     </div>
@@ -66,15 +67,14 @@ nav .links1 a{
 
 }
 
+nav .links a:hover, nav .links1 a:hover{
+    transform: scale(1.2);
+} 
+
 a{
     color: #fff;
     font-weight: 500;
 }
-
-.router-link-exact-active{
-  color: red;
-}
-
 
 @media Screen and (min-width:500px){
     nav .links{

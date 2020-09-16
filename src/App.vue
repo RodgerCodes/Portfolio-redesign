@@ -1,19 +1,33 @@
 <template>
   <div>
     <Header/>
-    <router-view/>
-    <!-- <Footer/> -->
+    <Home/>
+    <About/>
+    <Projects/>
+    <Uses/>
+    <Contact/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Header from './components/layout/Header'
-// import Footer from './components/layout/Footer'
+import Home from './Views/Home.vue'
+import About from './Views/About.vue'
+import Projects from './Views/Projects.vue'
+import Uses from './Views/Uses.vue'
+import Contact from './Views/Contact.vue'
+import Footer from './components/layout/Footer'
 export default {
   name: 'App',
   components: {
     Header,
-    // Footer
+    Home,
+    About,
+    Projects,
+    Uses,
+    Contact,
+    Footer
   }
 }
 </script>
@@ -23,6 +37,10 @@ export default {
 :root{
   --bg-color:#15202b;
   --text-color:rgba(255, 255, 255, 0.918);
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 *{
@@ -48,7 +66,7 @@ li{
 
 .grid{
   display: grid;
-  grid-column: 1/12;
+  grid-column: 1/15;
 
 }
 </style>

@@ -8,14 +8,13 @@
     
     <img :src="dev" alt="">
     <div>
-      <router-link to="/about" class="btn">About</router-link>
+      <router-link to="/#about" class="btn">About</router-link>
     </div>
 
     </div>
 </template>
 
 <script>
-// import Footer from './layout/Footer'
 export default {
   name: 'Homesection',
   data() {
@@ -68,6 +67,106 @@ export default {
 .home .btn:hover{
   transform: scale(1.1);
 }
+
+@media screen and (min-width:360px){
+   body{
+     font-size: 17px;
+   }
+
+   .home .intro{
+     margin-top: 180px;
+   }
+}
+
+@media screen and (height:812px){
+  .home .intro{
+    margin-top:240px;
+  }
+
+  .home .btn{
+    top: 59%;
+  }
+}
+
+@media screen and (height:1024px){
+  .home .intro{
+    margin-top: 500px !important;
+  }
+
+  .home .intro h3{
+    font-size: 1.7rem;
+  }
+
+  .home .intro h1{
+    font-size: 4rem;
+  }
+
+  .home .btn{
+    top: 50% !important;
+  }
+
+  .home img{
+    margin-top: 400px !important;
+  }
+
+  
+}
+
+@media screen and (min-width:375px){
+    .home .btn{
+      top: 70%;
+    }
+  }
+
+  @media screen and (min-width: 425px){
+     .home .btn{
+       top: 80%;
+     }
+  }
+
+@media screen and (height:1366px){
+  .home .intro{
+    margin-top: 620px !important;
+  }
+
+  .home img{
+    margin-top: 500px !important;
+    width: 200% !important;
+  }
+
+  .home .intro h1{
+    font-size: 5rem;
+  }
+
+  .home .intro h2{
+    font-size: 4rem;
+  }
+
+  .home .btn{
+    top: 60% !important;
+    font-size: 3rem;
+    left: 2% !important;
+  }
+
+  .home .intro h3{
+    font-size: 3rem;
+  }
+
+  /* body{
+    font-size: 21px !important;
+  } */
+}
+
+@media screen and (min-width:411px){
+   body{
+     font-size: 18px;
+   }
+
+   .home .intro{
+     margin-top: 230px;
+   }
+}
+
 
 
 @media screen and (min-width:500px){
@@ -169,7 +268,7 @@ export default {
 
     .home .btn{
       top: 67%;
-      left:4%;
+      left:5.3%;
       font-size: 1.2rem;
     }
 

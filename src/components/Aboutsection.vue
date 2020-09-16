@@ -1,5 +1,5 @@
 <template>
-    <div class="about">
+    <div class="about" id="about">
        <h1>About Me</h1>
        <div class="about-info grid">
         <img :src="myimage" alt="Rodger Photo" loading="lazy">
@@ -8,15 +8,12 @@
         </div>
        </div>
        <Techstack/>
-       <div>
-          <Footer/>
-       </div>
     </div>
 </template>
 
 <script>
 import Techstack from './extracomp/Techstack';
-import Footer from './layout/Footer'
+
 export default {
     name:'Aboutsection',
     data() {
@@ -26,14 +23,13 @@ export default {
     },
     components:{
         Techstack,
-        Footer
     }
 }
 </script>
 
 <style>
 .about{
-    margin-top: 40px;
+    margin-top: 150px;
 }
 .about h1 {
     text-align: center;
@@ -46,8 +42,14 @@ export default {
     padding: 10px 30px;
     grid-column: 6/7;
     grid-row: 1;
-
+    border: 2px solid transparent;
+   transition: all 0.5s ease;
 }
+
+.about-info img:hover{
+  transform: scale(1.2);
+}
+
 
 .about-info .extra-info{
     grid-row: 2;

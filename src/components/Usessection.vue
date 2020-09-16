@@ -1,6 +1,6 @@
 <template>
-    <div class="uses">
-        <p>This Page is inspired by <a href="https://wesbos.com/uses" rel="noreferrer noopener" target="_blank">Wes Bos's Uses page</a></p>
+    <div class="uses" id="uses">
+        <p>Inspired by <a href="https://wesbos.com/uses" rel="noreferrer noopener" target="_blank">Wes Bos's Uses page</a></p>
         <div class="Editor">
           <h1>Editor + Terminal</h1>
           <div>
@@ -58,19 +58,16 @@
           </div>
         </div>
         <div>
-           <Footer/>
+           <!-- <Footer/> -->
         </div>
     </div>
     
 </template>
 
 <script>
-import Footer from './layout/Footer'
 export default {
     name:'Usessection',
-    components:{
-        Footer
-    }
+   
 }
 </script>
 
@@ -78,6 +75,7 @@ export default {
 
 .uses{
     margin-top: 40px;
+    padding: 10px 15px;
 }
 .uses p {
     padding: 15px 8px;
@@ -122,6 +120,12 @@ hr{
     padding: 0 10px;
 }
 
+@media screen and (min-width:414px){
+    .uses{
+        padding: 10px 15px;
+    }
+}
+
 @media screen and (min-width:500px) {
     .uses p{
         text-align: center;
@@ -134,7 +138,7 @@ hr{
 
 @media screen and (min-width:1130px){
     .uses .Editor, .uses .Desktop, .uses .hosting{
-        padding: 0 100px;
+        padding: 0 70px;
     }
 }
 </style>

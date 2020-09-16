@@ -1,5 +1,5 @@
 <template>
-    <div class=" project ">
+    <div class="project" id="projects">
         <h1>My Projects</h1>
         <p>Here is a list of some of my Personal Projects</p>
         <div class=" projects grid"> 
@@ -20,7 +20,7 @@
           <h2>Todo-ist</h2>
            <img :src="todo" alt="Project image" loading="lazy">
            <div class="project-info">
-             <p>A todoList app built with node and mongoDb</p>
+             <p>A todoList app </p>
              <div>
                  <i class="fab fa-chrome" color="#000"></i>
                 <a target="_blank" rel="noreferrer" href="https://todoist4.herokuapp.com/">view</a>
@@ -42,15 +42,11 @@
              </div>
            </div>
         </div>
-        </div>
-         <div class="bt">
-            <Footer/>
-         </div>  
+        </div> 
         </div>
 </template>
 
 <script>
-import Footer from './layout/Footer'
 export default {
     name:"Projectsection",
     data(){
@@ -60,9 +56,6 @@ export default {
         todo:require('../assets/todoist.jpg')
       }
     },
-    components:{
-      Footer
-    }
 }
 </script>
 
@@ -146,6 +139,21 @@ export default {
      color:#fff;
      cursor: pointer;
  }
+
+ @media screen and (min-width:360px){
+    .project-2,.project-3, .project-4{
+      grid-column: 2;
+    } 
+ }
+
+@media screen and (height:1024px) {
+  .project-3{
+    grid-column: 3/3 !important;
+  }
+  .project-4{
+    grid-column: 2/5 !important;
+  }
+}
 
  @media Screen and (min-width:500px){
    .project-2, .project-3, .project-4{
