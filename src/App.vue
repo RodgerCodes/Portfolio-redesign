@@ -60,10 +60,6 @@ a{
   text-decoration: none;
 }
 
-li{
-  list-style: none;
-}
-
 .grid{
   display: grid;
   grid-column: 1/15;

@@ -1,5 +1,5 @@
 <template>
-    <div class="contact-info" id="contact">
+    <div data-aos="fade-up" class="contact-info" id="contact">
       <h1>Contact Info</h1>
        <div class="classic">
          

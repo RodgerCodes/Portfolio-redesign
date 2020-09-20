@@ -1,5 +1,5 @@
 <template>
-    <div class="uses" id="uses">
+    <div data-aos="fade-up" class="uses" id="uses">
         <p>Inspired by <a href="https://wesbos.com/uses" rel="noreferrer noopener" target="_blank">Wes Bos's Uses page</a></p>
         <div class="Editor">
           <h1>Editor + Terminal</h1>
@@ -54,11 +54,8 @@
           <hr>
           <div>
               <h3>Other cloud needs</h3>
-              <a href="https://www.digitalocean.com/" rel="noreferrer noopener" target="_blank">Digital Ocean</a>
+              <a href="https://www.kintohub.com/" rel="noreferrer noopener" target="_blank">KintoHub</a>
           </div>
-        </div>
-        <div>
-           <!-- <Footer/> -->
         </div>
     </div>
     
@@ -138,7 +135,7 @@ hr{
 
 @media screen and (min-width:1130px){
     .uses .Editor, .uses .Desktop, .uses .hosting{
-        padding: 0 70px;
+        padding: 0 50px;
     }
 }
 </style>

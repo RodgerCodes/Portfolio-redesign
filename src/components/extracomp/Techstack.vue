@@ -1,5 +1,5 @@
 <template>
-    <div class="tech">
+    <div data-aos="fade-up" class="tech">
         <h1>Skills</h1>
         <div class="stack">
             <div>
@@ -21,13 +21,19 @@
                 <img :src="express" alt="Express logo">
             </div>
             <div>
+                <img :src="postgres" alt="postgress logo">
+            </div>
+            <div>
+                <img :src="mysql" alt="msyql logo">
+            </div>
+            <div>
                 <img :src="flutter" alt="flutter logo">
             </div>
             <div>
                 <img :src="vue" alt="vuejs logo">
             </div>
             <div>
-                <img :src="mongodb" style="width:60px !important;" alt="mongodb logo">
+                <img :src="mongodb"  alt="mongodb logo">
             </div>
             
             <div>
@@ -52,7 +58,9 @@ export default {
             git:require('../../assets/git.png'),
             flutter:require('../../assets/flutter.png'),
             express:require('../../assets/express.png'),
-            django:require('../../assets/pyhton.png')
+            django:require('../../assets/pyhton.png'),
+            postgres:require('../../assets/postgress.png'),
+            mysql:require('../../assets/download.png')
         }
     },
 }
@@ -68,40 +76,37 @@ export default {
 .tech .stack{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-gap: px; */
     padding: 10px 50px;
 }
 
 .tech .stack div{
-    margin: 10px 0;
+    margin: 10px 30px;
 }
 
 .tech .stack > div img:hover{
-    /* background-color: rebeccapurple; */
     transform: scale(1.3);
 }
 
 
 .tech .stack > div img {
     max-width: 50px;
-    width: 10%;
+    width: 370%;
     transition: all 0.5s ease;
 }
 
 @media screen and (min-width:500px) {
       .tech .stack {
-          grid-template-columns: repeat(4,1fr);
-          margin-left: 70px;
+          grid-template-columns: repeat(5,1fr);
       }
 
       .tech .stack > div img{
-          width: 60%;
+          width: 370%;
       }
 }
 
 @media screen and (min-width:710px){
     .tech .stack{
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(9, 1fr);
     }
 }
 </style>

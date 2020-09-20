@@ -1,7 +1,7 @@
 <template>
   <div class="home grid">
     <div class="intro">
-        <h1>Hello there ,</h1>
+        <h1>Hello there ✌,</h1>
      <h2>I'm Rodger Kumwanje</h2>
      <h3>A FullStack Web Developer</h3>
     </div>
@@ -268,7 +268,7 @@ export default {
 
     .home .btn{
       top: 67%;
-      left:5.3%;
+      left:4%;
       font-size: 1.2rem;
     }
 
