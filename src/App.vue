@@ -1,12 +1,17 @@
 <template>
   <div>
-    <Header/>
+    <div v-if="loading" class="center">
+     <vue-simple-spinner size="huge" message="Hello world 😊" text-fg-color="#eee"/>
+    </div>
+    <div v-if="content">
+      <Header/>
     <Home/>
     <About/>
     <Projects/>
     <Uses/>
     <Contact/>
     <Footer/>
+    </div>
   </div>
 </template>
 
@@ -18,6 +23,7 @@ import Projects from './Views/Projects.vue'
 import Uses from './Views/Uses.vue'
 import Contact from './Views/Contact.vue'
 import Footer from './components/layout/Footer'
+import VueSimpleSpinner from 'vue-simple-spinner';
 export default {
   name: 'App',
   components: {
@@ -27,7 +33,21 @@ export default {
     Projects,
     Uses,
     Contact,
-    Footer
+    Footer,
+    VueSimpleSpinner
+  },
+  data(){
+    return {
+      loading:false,
+      content:false
+    }
+  },
+  created(){
+    this.loading = true;
+    setTimeout(() => {
+        this.loading = false;
+        this.content = true;
+    }, 3500)
   }
 }
 </script>
@@ -41,6 +61,13 @@ export default {
 
 html{
   scroll-behavior: smooth;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 *{

@@ -50,16 +50,16 @@ export default {
     data() {
         return {
             docker:require('../../assets/docker.png'),
-            node:require('../../assets/nh.png'),
-            html:require('../../assets/html.png'),
-            mongodb:require('../../assets/mongo.png'),
-            vue:require('../../assets/vuej.png'),
-            js:require('../../assets/js.png'),
-            git:require('../../assets/git.png'),
+            node:require('../../assets/nh.webp'),
+            html:require('../../assets/html.webp'),
+            mongodb:require('../../assets/mongo.webp'),
+            vue:require('../../assets/vuej.webp'),
+            js:require('../../assets/js.webp'),
+            git:require('../../assets/git.webp'),
             flutter:require('../../assets/flutter.png'),
             express:require('../../assets/express.png'),
             django:require('../../assets/pyhton.png'),
-            postgres:require('../../assets/postgress.png'),
+            postgres:require('../../assets/postgress.webp'),
             mysql:require('../../assets/download.png')
         }
     },

@@ -24,7 +24,7 @@ export default {
  name:'Header',
  data(){
      return{
-         logo:require('../../assets/logo.png')
+         logo:require('../../assets/logo.webp')
      }
  }
 }

@@ -18,7 +18,7 @@ export default {
     name:'Aboutsection',
     data() {
         return {
-            myimage:require('../assets/rodger.png')
+            myimage:require('../assets/rodger.webp')
         }
     },
     components:{
