@@ -6,6 +6,9 @@
         Contact me via
         <a href="mailto:rkumwanje@gmail.com">Email</a>
       </p>
+      <a href="https://github.com/RodgerCodes" target="_blank"
+        ><i class="fab fa-github fa-lg" style="color:#000"></i
+      ></a>
     </div>
   </div>
 </template>
@@ -52,29 +55,6 @@ export default {
 
 .contact-info .extra a {
   color: #34ade3;
-}
-
-.contact-info .social {
-  display: flex;
-  justify-content: space-around;
-  margin: 26px 10px;
-  padding: 10px 8px;
-  transition: all 1s ease;
-}
-
-.contact-info .social a:hover {
-  background-image: linear-gradient(#753a88, #cc2b5e);
-  padding: 10px 8px;
-  border-radius: 80%;
-  transition: all 0.5s ease;
-}
-
-@media screen and (min-width: 500px) {
-  .contact-info .classic {
-    padding: 0 10px;
-    display: flex;
-    justify-content: space-between;
-  }
 }
 
 @media screen and (min-width: 760px) {

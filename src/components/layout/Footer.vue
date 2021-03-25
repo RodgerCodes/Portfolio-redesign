@@ -15,9 +15,10 @@ export default {
 .footer {
   position: absolute;
   width: 100%;
-  background-color: #11181f;
+  background-color: #fff;
   left: 50%;
   transform: translateX(-50%);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.589);
 }
 
 .footer p {
